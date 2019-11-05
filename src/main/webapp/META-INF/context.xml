@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/farmacia">
+    
+    <Resource name="jdbc/farmacia"
+              auth="Container"
+              type="javax.sql.DataSource"
+              factory="com.zaxxer.hikari.HikariJNDIFactory"
+              minimumIdle="5"
+              maximumPoolSize="40"
+              connectionTimeout="200000"
+              dataSourceClassName="com.mysql.cj.jdbc.MysqlDataSource"            
+              dataSource.url="jdbc:mysql://localhost:3306/farmacia?useTimezone=false&amp;serverTimezone=America/Sao_Paulo"
+              dataSource.user="root"
+              dataSource.password="root"/>
+
+</Context>
